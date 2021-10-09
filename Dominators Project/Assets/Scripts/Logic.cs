@@ -178,7 +178,7 @@ public class Logic : MonoBehaviour
             if ((BMI < 24.9) && (BMI > 18.5))
             {
                 bmiPropertyText.text = ("You have a healthy BMI");
-                float BMIDev = BMI - 21.7f;
+                float BMIDev = Mathf.Abs(BMI - 21.7f);
                 BMIRate = 10 - BMIDev;
             }
             if (BMI < 18.5)
@@ -207,7 +207,7 @@ public class Logic : MonoBehaviour
                 else
                 {
                     bmiPropertyText.text = ("You have a healthy BMI");
-                    float BMIDev = BMI - 16;
+                    float BMIDev = Mathf.Abs(BMI - 16);
                     BMIRate = 10 - BMIDev;
                 }
             }
@@ -228,7 +228,7 @@ public class Logic : MonoBehaviour
                 else
                 {
                     bmiPropertyText.text = ("You have a healthy BMI");
-                    float BMIDev = BMI - 18.25f;
+                    float BMIDev = Mathf.Abs(BMI - 18.25f);
                     BMIRate = 10 - BMIDev;
                 }
             }
@@ -249,28 +249,13 @@ public class Logic : MonoBehaviour
                 else
                 {
                     bmiPropertyText.text = ("You have a healthy BMI");
-                    float BMIDev = BMI - 21.5f;
+                    float BMIDev = Mathf.Abs(BMI - 21.5f);
                     BMIRate = 8 - BMIDev;
                 }
             }
         }
-        if (age > 20)
-        {
-            if (BMI >= 25.0)
-            {
-                bmiPropertyText.text = ("Your BMI is higher than recommended levels");
-            }
-            if ((BMI < 24.9) && (BMI > 18.5))
-            {
-                bmiPropertyText.text = ("You are within the healthy range");
-            }
-            if (BMI < 18.5)
-            {
-                bmiPropertyText.text = ("Your BMI is lower than recommended levels");
-            }
-        }
         bmiRateText.text = ("Your BMI Rate is - " + BMIRate.ToString());
-        healthRating.text = "Health Rate Index" + (((SPO2Rating) + (heartRateRating) + (BMIRate) + (sleep_time_Rating)) / 4).ToString();
+        healthRating.text = "Health Rate Index : " + (((SPO2Rating) + (heartRateRating) + (BMIRate) + (sleep_time_Rating)) / 4).ToString();
     }
     public void TestEyeSight()
     {

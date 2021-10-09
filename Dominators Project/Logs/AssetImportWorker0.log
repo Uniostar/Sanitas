@@ -810,3 +810,75 @@ Total: 2.943629 ms (FindLiveObjects: 0.334699 ms CreateObjectMapping: 0.132569 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005453 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.715 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2080 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.1 MB.
+System memory in use after: 192.1 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2625.
+Total: 6.082935 ms (FindLiveObjects: 0.953410 ms CreateObjectMapping: 0.383327 ms MarkObjects: 4.526752 ms  DeleteObjects: 0.216002 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004678 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.727 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2080 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.4 MB.
+System memory in use after: 192.4 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2629.
+Total: 3.490476 ms (FindLiveObjects: 0.273962 ms CreateObjectMapping: 0.210599 ms MarkObjects: 2.839710 ms  DeleteObjects: 0.164321 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007879 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.182 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2080 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.6 MB.
+System memory in use after: 192.6 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2633.
+Total: 3.282128 ms (FindLiveObjects: 0.357638 ms CreateObjectMapping: 0.136139 ms MarkObjects: 2.627511 ms  DeleteObjects: 0.158978 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
