@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{FAFAE381-D5B7-D858-C3D7-16C1D2661553}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Logic.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Logic.cs" Line="4" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Dominators Project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Logic.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b28fdaf2-3e17-48c1-8b5f-3b8738014fd0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
