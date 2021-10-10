@@ -30,36 +30,6 @@ public class Logic : MonoBehaviour
         scene2.SetActive(false);
         scene3.SetActive(false);
     }
-    void Update()
-    {
-        /*print("Your sleep is one of the most important parts of your health. If you are facing issues with your sleep that regular interruptions and tiredness throughout the day, you may be suffering from diseases like sleep apnea or Hyposomnia.");
-        print("Hyposomnia is a dangerous disease that causes you to fall into small bouts of sleep called microsleeps that shuts down your bodies for small periods. This can be fatal, like when you are driving a car, or walking down stairs");
-        print("Sleep Apnea is a disease in which your breathing repearedly stops and starts int he middle of the night. This disease is fatal and many times needs surgery");
-        print("If you have any of the following symptoms, or identify as having any of the following conditions, contact a doctor immediately");
-        */
-
-        //Put it separately in the app print(heartRateRating + " is the rating of how good your heart rate is from the average out of 10, 10 being the best heart rate, 0 being the worst");
-
-        /*Put it separately in the app - Pend.text += "Importance of the heart rate");
-        end.text += ("A high heart rate normally means that you are either very panicked or are having any heart issues. Many times this can be because of Arrhythmia, a disease in which your heart beats irregularly. This might also be because you have a viral infection or something else that is affecting your body. ");
-        end.text += ("A slow heart rate can cause you to feel fatigued and sometimes be a sign of impendent Cardiac Arrest. ");*/
-
-        /* Place it separately end.text += (SPO2Rating + " is the rating of how good your SPO2 is from the average out of 10, 10 being the best Blood saturation, 0 being the worst");
-        end.text += ("Your SpO2 Rating determines the saaturation of oxygen in your body. Any saturation below 94 is unhealthy and a saturation below 85 leaves you unconscious. This is one of the most important Health factors, make sure to keep it normal and healthy based on instructions we will give later on.");
-        */
-
-        /*print(BMIRate + " BMIRate is the rating of how good your Body Mass Index is from the average out of 10, 10 being the best Body Mass Index, 0 being the worst");
-        print("Your BMI is the ratio of your mass to height and determines whether you are under or over-weight.");
-        */
-
-        //end.text += ("Heart Rate Rating is the rating of how good your heart rate is from the average out of 10, 10 being the best heart rate, 0 being the worst");
-
-        /*System.out.println("your oxygen saturation is the most important part of your health, if it goes too low, it can even be fatal");
-        System.out.println("Your Heart rate determines a very large part of your health. Maintaining a regular and healthy heart rate is very important");
-        System.out.println("Your Sleep and BMI determine your health in your day-today life. Despite not being as important as the heart rate and Oxygen saturation, they must still be well maintained, as in the long term this can lead to health problems");
-        */
-    }
-
     //Switch to Scene 2
     public void GoToScene2()
     {
@@ -183,35 +153,42 @@ public class Logic : MonoBehaviour
         //Calculate Heart Rate Rating and Print It
         heartRateRatingText.text = ("> Heart Rate Rating : " + heartRateRating.ToString());
 
-        //Calculate SpO2 Rating and Print It
+        //Calculate SpO2 Rating
         SPO2Rating = (spo2 - 80) / 2;
 
+        //If SPO2 is lesser than or equal to 94
         if (spo2 <= 94)
         {
             spo2Text.text = ("> Your oxygen level is low. Consult a doctor. " + SPO2Rating + " is your SpO2 Rating.");
         }
+        //If SpO2 is greater than 94
         else
         {
             spo2Text.text = ("> Your oxygen levels are healthy " + SPO2Rating + " is your SpO2 Rating.");
         }
 
+        //Find and print BMI
         BMI = weight / (Mathf.Pow((height / 100), 2));
         bmiValueText.text = ("> Your BMI is " + BMI + " kg/m²");
 
+        //If age is greater than 20
         if (age > 20)
         {
+            //If BMI is greater than and equal to 25
             if (BMI >= 25.0)
             {
                 bmiPropertyText.text = ("> Your BMI is higher than recommended levels");
                 float BMIDev = BMI - 25;
                 BMIRate = 8 - BMIDev;
             }
+            //If BMI is between 24.9 and 18.5
             if ((BMI < 24.9) && (BMI > 18.5))
             {
                 bmiPropertyText.text = ("> You have a healthy BMI");
                 float BMIDev = Mathf.Abs(BMI - 21.7f);
                 BMIRate = 10 - BMIDev;
             }
+            //If BMI is lesser than 18.5
             if (BMI < 18.5)
             {
                 bmiPropertyText.text = ("> Your BMI is lower than recommended levels");
@@ -219,22 +196,27 @@ public class Logic : MonoBehaviour
                 BMIRate = 8 - BMIDev;
             }
         }
+        //If age is smaller than equal to 20
         if (age <= 20)
         {
+            //If Age is between 2 and 10
             if (age >= 2 && age <= 10)
             {
+                //If BMI is less than 14
                 if (BMI < 14)
                 {
                     bmiPropertyText.text = ("> Your BMI is lower than recommended levels");
                     float BMIDev = 14 - BMI;
                     BMIRate = 8 - BMIDev;
                 }
+                //If BMI is greater than 18
                 else if (BMI > 18)
                 {
                     bmiPropertyText.text = ("> Your BMI is higher than recommended levels");
                     float BMIDev = BMI - 18;
                     BMIRate = 8 - BMIDev;
                 }
+                //If BMI is between 18 and 14
                 else
                 {
                     bmiPropertyText.text = ("> You have a healthy BMI");
@@ -242,20 +224,24 @@ public class Logic : MonoBehaviour
                     BMIRate = 10 - BMIDev;
                 }
             }
+            //If Age is between 11 and 14
             if (age >= 11 && age <= 14)
             {
+                //If BMI is lesser than 14.5
                 if (BMI < 14.5)
                 {
                     bmiPropertyText.text = ("> Your BMI is lower than recommended levels");
                     float BMIDev = 14.5f - BMI;
                     BMIRate = 8 - BMIDev;
                 }
+                //If BMI is greater than 22
                 else if (BMI > 22)
                 {
                     bmiPropertyText.text = ("> Your BMI is higher than recommended levels");
                     float BMIDev = BMI - 22;
                     BMIRate = 8 - BMIDev;
                 }
+                //If BMI is between 22 and 14.5
                 else
                 {
                     bmiPropertyText.text = ("> You have a healthy BMI");
@@ -263,20 +249,24 @@ public class Logic : MonoBehaviour
                     BMIRate = 10 - BMIDev;
                 }
             }
+            //If age is between 14 and 20
             if (age > 14 && age <= 20)
             {
+                //If BMI is lesser than 17
                 if (BMI < 17)
                 {
                     bmiPropertyText.text = ("> Your BMI is lower than recommended levels");
                     float BMIDev = 17 - BMI;
                     BMIRate = 8 - BMIDev;
                 }
+                //If BMI greater than 26
                 else if (BMI > 26)
                 {
                     bmiPropertyText.text = ("> Your BMI is higher than recommended levels");
                     float BMIDev = BMI - 26;
                     BMIRate = 8 - BMIDev;
                 }
+                //If BMI is between 26 and 17
                 else
                 {
                     bmiPropertyText.text = ("> You have a healthy BMI");
@@ -285,7 +275,11 @@ public class Logic : MonoBehaviour
                 }
             }
         }
+
+        //Claculate BMI Rating
         bmiRateText.text = ("> Your BMI Rate is - " + BMIRate.ToString());
+
+        //Calculate Health Rate Index
         healthRating.text = "> Health Rate Index : " + (((SPO2Rating) + (heartRateRating) + (BMIRate) + (sleep_time_Rating)) / 4).ToString();
     }
     public void TestEyeSight()

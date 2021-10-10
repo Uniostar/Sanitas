@@ -966,6 +966,7 @@ MonoBehaviour:
   bmiPropertyText: {fileID: 668662734}
   bmiRateText: {fileID: 1076501469}
   healthRating: {fileID: 430341312}
+  spo2RatingText: {fileID: 1012046163}
   ageInput: {fileID: 122967213}
   pulseInput: {fileID: 1007890835}
   spo2Input: {fileID: 36001015}
