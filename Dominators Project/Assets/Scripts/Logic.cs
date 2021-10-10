@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Logic : MonoBehaviour
 {
@@ -282,8 +283,16 @@ public class Logic : MonoBehaviour
         //Calculate Health Rate Index
         healthRating.text = "> Health Rate Index : " + (((SPO2Rating) + (heartRateRating) + (BMIRate) + (sleep_time_Rating)) / 4).ToString();
     }
+
+    //Open Eye Tesing URL (Easter Egg in Program)
     public void TestEyeSight()
     {
         Application.OpenURL("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Snellen_chart.svg/800px-Snellen_chart.svg.png");
+    }
+
+    //Go Back to Home
+    public void GoBack()
+    {
+        SceneManager.LoadScene(1);
     }
 }
