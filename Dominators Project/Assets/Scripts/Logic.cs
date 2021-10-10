@@ -277,7 +277,7 @@ public class Logic : MonoBehaviour
         }
 
         //Claculate BMI Rating
-        bmiRateText.text = ("> Your BMI Rate is - " + BMIRate.ToString());
+        bmiRateText.text = ("> Your BMI Rating is - " + BMIRate.ToString());
 
         //Calculate Health Rate Index
         healthRating.text = "> Health Rate Index : " + (((SPO2Rating) + (heartRateRating) + (BMIRate) + (sleep_time_Rating)) / 4).ToString();

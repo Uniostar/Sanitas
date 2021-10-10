@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Note.unity
+    guid: 85b375f07b3984d3997259d486184649
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 35ebc968c79b0468e934b578f0dd82ea
+  - enabled: 1
     path: Assets/Scenes/Test Health.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Test Illness.unity
+    guid: e2c31101276c848668ced58b7cd1bd27
   m_configObjects: {}
