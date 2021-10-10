@@ -272,3 +272,14 @@ System memory in use after: 140.1 MB.
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2542.
 Total: 3.477486 ms (FindLiveObjects: 0.250741 ms CreateObjectMapping: 0.119038 ms MarkObjects: 2.943815 ms  DeleteObjects: 0.162591 ms)
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 13.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.4 MB.
+System memory in use after: 140.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2542.
+Total: 3.817101 ms (FindLiveObjects: 0.545779 ms CreateObjectMapping: 0.125347 ms MarkObjects: 2.973126 ms  DeleteObjects: 0.170629 ms)
+
