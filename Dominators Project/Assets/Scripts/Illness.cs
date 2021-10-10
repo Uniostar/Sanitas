@@ -36,6 +36,9 @@ public class Illness : MonoBehaviour
             case 4:
                 Covid();
                 break;
+            case 5:
+                Diabetes();
+                break;
             default:
                 Symptoms.text = "If you have any symptoms, please consult a doctor who can tend to them";
                 decline.interactable = false;
@@ -108,5 +111,14 @@ public class Illness : MonoBehaviour
 		                 3. loss of speech or mobility, or confusion");
         diseaseInfo.text = (@"It is most likely you have the coronavirus Covid-19
 				            It is caused by the coronavirus. Wear a mask, Clean your hands, Maintain safe distance, Get vaccinated to prevent the spread of the disease. Isolate yourself in a well ventilated room. Use and discard your mask appropriately. Take rest and drink a lot of fluids. Follow respiratory etiquettes. Frequently sanitize hands, surfaces and substances. Don’t share personal items with other people in the household. Monitor temperature and SPO2. Connect with physician if symptom is noticed.");
+    }
+    public void Diabetes()
+    {
+        Symptoms.text = (@"Do you have any of the following symptoms?
+                           1. very high urine production, kidney failure, severe unintentional weight loss
+                           2. Blurred Vision
+                           3. Excessive thirst");
+        diseaseInfo.text = (@"It is likely you have Diabetes Mellitus
+                              Diabetes Mellitus is a disease caused by underproduction of Insulin in the body, which ends up in uncontrolled sugar levels. Reduce your sugar consumption. If you identify with all these symptoms, you might need to consult a doctor for medical advice");
     }
 }

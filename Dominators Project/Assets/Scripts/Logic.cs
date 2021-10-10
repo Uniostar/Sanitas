@@ -22,7 +22,8 @@ public class Logic : MonoBehaviour
 
     //Identifiers needed for calculating health rating
     float age, heartRate, spo2, height, weight, sleep, BMI;
-    float heartRateRating, SPO2Rating, BMIRate, sleep_time_Rating;
+    float heartRateRating, SPO2Rating, BMIRate, sleep_time_Rating, healthRatingF;
+    public static int i;
 
     //Set Up Scene  1
     void Start()
@@ -38,10 +39,14 @@ public class Logic : MonoBehaviour
         scene2.SetActive(true);
         scene3.SetActive(false);
     }
-
     //Switch to Scene 3
     public void GoToScene3()
     {
+        PlayerPrefs.SetString("Check", System.DateTime.Now.ToString("dd"));
+
+        //Initialize Variable
+        PlayerPrefs.SetInt("Update", 0);
+
         //Convert Input String to Float
         age = float.Parse(ageInput.text);
         heartRate = float.Parse(pulseInput.text);
@@ -278,18 +283,17 @@ public class Logic : MonoBehaviour
         }
 
         //Claculate BMI Rating
-        bmiRateText.text = ("> Your BMI Rating is - " + BMIRate.ToString());
+        bmiRateText.text = ("> Your BMI Rating is : " + BMIRate.ToString());
 
-        //Calculate Health Rate Index
-        healthRating.text = "> Health Rate Index : " + (((SPO2Rating) + (heartRateRating) + (BMIRate) + (sleep_time_Rating)) / 4).ToString();
+        //Calculate and Print Health Rate Index
+        healthRatingF = ((SPO2Rating) + (heartRateRating) + (BMIRate) + (sleep_time_Rating)) / 4;
+        healthRating.text = "> Health Rate Index : " + healthRatingF.ToString();
     }
-
     //Open Eye Tesing URL (Easter Egg in Program)
     public void TestEyeSight()
     {
         Application.OpenURL("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Snellen_chart.svg/800px-Snellen_chart.svg.png");
     }
-
     //Go Back to Home
     public void GoBack()
     {
